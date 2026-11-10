@@ -1,0 +1,30 @@
+# Copy to configs/datasets/<name>.yaml, fill in, then:
+#   uv run python -m saathi.data.import_open_dataset configs/datasets/<name>.yaml --dry-run
+#
+# Fill in license and provenance from the dataset card AND the original source. If either
+# is unclear, do not import: the importer refuses unclear licenses and myscheme.gov.in data.
+
+name: example-dataset            # lower-case slug; output: data/qa/generated/open-<name>.jsonl
+format: hf                       # hf | csv | json | jsonl
+path: owner/dataset-name         # HF id (format: hf) or a local file path
+hf_split: train
+license: cc-by-4.0               # SPDX id, e.g. cc-by-4.0, cc0-1.0, apache-2.0, mit
+source_url: https://huggingface.co/datasets/owner/dataset-name
+provenance: human                # human | synthetic | scraped | machine_translit | machine_translation
+generator_model: null            # model that wrote the questions, if synthetic (bias check)
+
+columns:
+  question: question
+  answer: answer
+  scheme: scheme_name            # scheme id or name; mapped to our scheme IDs below
+  language: null                 # column name, or null to use language_default / detection
+  qtype: null
+  passages: null                 # column with OUR passage IDs; null -> automatic alignment
+  group: null                    # column linking translations of one question
+
+language_default: en             # en | hi | hinglish, or null to detect per row
+language_map: {}                 # e.g. {English: en, Hindi: hi}
+qtype_default: benefits          # eligibility | benefits | documents | how_to_apply
+scheme_map: {}                   # e.g. {"PM Kisan Samman Nidhi": pm-kisan}
+min_overlap: 0.5                 # share of answer words that must appear in the passage
+limit: null                      # import only the first N rows (pilot)

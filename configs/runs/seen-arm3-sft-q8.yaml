@@ -1,0 +1,6 @@
+# Secondary split: does SFT add knowledge about schemes it was trained on?
+run_id: seen-arm3-sft-q8
+arm: closed_book
+backend: ollama
+model: qwen3-1.7b-saathi:q8_0
+test_file: data/qa/test_seen.jsonl

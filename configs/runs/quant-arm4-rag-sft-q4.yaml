@@ -1,0 +1,7 @@
+# Quantization study on the best local arm (arm 4 assumed; change if another wins)
+run_id: quant-arm4-rag-sft-q4
+arm: rag
+backend: ollama
+model: qwen3-1.7b-saathi:q4_k_m
+k: 5
+rerank: false  # reranker needs ~2 GB RAM; off on the author's laptop (DECISIONS 2026-11-10)

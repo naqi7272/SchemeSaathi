@@ -1,0 +1,12 @@
+run_id: arm1-prompt-base-q8
+arm: closed_book
+backend: ollama
+model: qwen3-1.7b-base:q8_0
+effort: low
+base_url: null
+k: 5
+candidates: 20
+rerank: true
+test_file: data/qa/test_gold.jsonl
+passages_file: data/processed/passages.jsonl
+rules_dir: data/rules

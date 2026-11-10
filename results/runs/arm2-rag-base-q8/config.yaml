@@ -1,0 +1,12 @@
+run_id: arm2-rag-base-q8
+arm: rag
+backend: ollama
+model: qwen3-1.7b-base:q8_0
+effort: low
+base_url: null
+k: 5
+candidates: 20
+rerank: false
+test_file: data/qa/test_gold.jsonl
+passages_file: data/processed/passages.jsonl
+rules_dir: data/rules

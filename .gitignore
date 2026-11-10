@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+
+# Large or regenerable artifacts
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/manifest.jsonl
+chroma/
+models/
+*.gguf
+*.sqlite
+examples/toy_labels.jsonl
+demo_memory.sqlite
+
+# Hand-saved source documents stay local (copyright + never commit personal files).
+# Only the documents' manifest (data/raw/manifest.jsonl) is committed.
+data/manual/*
+!data/manual/.gitkeep

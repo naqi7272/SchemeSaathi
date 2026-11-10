@@ -1,0 +1,75 @@
+[project]
+name = "schemesaathi-bench"
+version = "0.1.0"
+description = "Comparing five approaches to answering Indian government scheme questions in English, Hindi, and Hinglish."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "bm25s>=0.3.15",
+    "chromadb>=1.5.9",
+    "httpx>=0.28.1",
+    "langfuse>=5.0.4",
+    "langgraph>=1.2.16",
+    "langgraph-checkpoint-sqlite>=3.1.2",
+    "langsmith>=0.14.12",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "ollama>=0.6.3",
+    "pydantic>=2.9",
+    "pypdf>=6.21.2",
+    "python-dotenv>=1.2.4",
+    "pyyaml>=6.0.3",
+    "truststore>=0.10.5",
+]
+
+[project.scripts]
+saathi-verify = "saathi.verify.cli:main"
+saathi-eval = "saathi.eval.run:main"
+saathi-label-judge = "saathi.eval.label_judge:main"
+saathi-agent-eval = "saathi.agent.conversations:main"
+
+[project.optional-dependencies]
+models = [
+    "sentence-transformers>=6.2.0",
+]
+demo = [
+    "gradio>=6.30.0",
+]
+# Import Hugging Face datasets (saathi.data.import_open_dataset, format: hf)
+open-data = [
+    "datasets>=3.0",
+]
+# Romanized-Hindi variants (saathi.data.romanize). Pure Python: installs on Windows/Colab.
+translit = [
+    "indic-transliteration>=2.3",
+]
+# Optional paid backend. The default $0 path never imports it.
+claude = [
+    "anthropic>=2.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "ruff>=0.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/saathi"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

@@ -1,0 +1,6 @@
+run_id: arm4-rag-sft-q8
+arm: rag
+backend: ollama
+model: qwen3-1.7b-saathi:q8_0
+k: 5
+rerank: false  # reranker needs ~2 GB RAM; off on the author's laptop (DECISIONS 2026-11-10)

@@ -1,0 +1,9 @@
+# Arm 2b: arm 2 + query translation. Hindi/Hinglish questions are rewritten by the same model
+# into an English search query before retrieval; everything else is identical to arm 2.
+run_id: arm2b-rag-translate-base-q8
+arm: rag
+backend: ollama
+model: qwen3-1.7b-base:q8_0
+k: 5
+rerank: false  # reranker needs ~2 GB RAM; off on the author's laptop (DECISIONS 2026-11-10)
+translate_query: true

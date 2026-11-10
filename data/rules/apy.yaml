@@ -1,0 +1,20 @@
+# DRAFTED BY CLAUDE from the official APY FAQ passages. Check each rule against its passage
+# (python -m saathi.agent.rules_tool validate; then read the passage), then set verified: true.
+scheme_id: apy
+verified: true
+rules:
+  - field: age
+    op: ">="
+    value: 18
+    passage_id: apy:d0-who-can-subscribe-to-apy:0
+    note: "The age of the subscriber should be between 18 and 40 years."
+  - field: age
+    op: "<="
+    value: 40
+    passage_id: apy:d0-if-i-have-completed-40-years-can-i-join:0
+    note: "a person who is in age group of 18 years to 39 years 364 days can join"
+  - field: has_bank_account
+    op: "=="
+    value: true
+    passage_id: apy:d0-who-can-subscribe-to-apy:0
+    note: "He / She should have a savings bank account/ post office savings bank account"

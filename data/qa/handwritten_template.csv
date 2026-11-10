@@ -1,0 +1,4 @@
+group_id,scheme_id,language,qtype,question,answer,passage_ids,notes
+toy-01,toy-scheme,en,benefits,How much money does the Toy Scheme give each year?,The Toy Scheme gives Rs 6000 per year.,toy-scheme:benefits:0,EXAMPLE ROW - delete before use
+toy-01,toy-scheme,hi,benefits,टॉय योजना में हर साल कितना पैसा मिलता है?,टॉय योजना में हर साल ₹6000 मिलते हैं।,toy-scheme:benefits:0,EXAMPLE ROW - same group_id = translation of the question above
+toy-02,toy-scheme,hinglish,unanswerable,Toy scheme ka helpline number kya hai?,Diye gaye documents mein helpline number nahi hai.,,EXAMPLE ROW - unanswerable questions have no passage_ids

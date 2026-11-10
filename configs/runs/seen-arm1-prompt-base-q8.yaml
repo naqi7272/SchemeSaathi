@@ -1,0 +1,6 @@
+# Secondary split: schemes seen in training, held-out questions
+run_id: seen-arm1-prompt-base-q8
+arm: closed_book
+backend: ollama
+model: qwen3-1.7b-base:q8_0
+test_file: data/qa/test_seen.jsonl

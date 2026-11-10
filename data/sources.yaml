@@ -1,0 +1,223 @@
+# Curated scheme documents. Only documents listed here are collected.
+#
+# How this list was made (2026-10-24): official URLs found by web search. They have NOT been
+# opened yet: `ingest fetch` downloads them on your machine and the manifest records what was
+# actually fetched. Check each terms_note line before publishing processed text.
+#
+# Fields: scheme_id (slug), name, terms_note (terms you checked), docs: [url, optional file]
+# - url only        -> fetched automatically (polite, robots.txt-aware)
+# - url + file      -> you saved the page by hand into data/manual/ (browser: Ctrl+S)
+# myscheme.gov.in is never fetched automatically (its Terms of Use forbid bots); its
+# copyright policy allows accurate reproduction with acknowledgement, so hand-saved
+# myScheme pages are a good source: https://www.myscheme.gov.in/copyright-policy
+#
+# Left out on purpose: MGNREGA (reported replaced by the VB-G RAM G Act, 2025, from
+# 1 Jul 2026), Soil Health Card (no scheme document found), DAY-NRLM (no official
+# guidelines on a government domain found).
+
+# ---------------------------------------------------------------- agriculture
+- scheme_id: pm-kisan
+  name: Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)
+  terms_note: "pmkisan.gov.in Copyright Policy (https://pmkisan.gov.in/CopyrightPolicy.aspx) requires PRIOR PERMISSION to reproduce: use for local research only, or get permission / use the myScheme copy before publishing processed text."
+  docs:
+    - url: https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf
+    - url: https://pmkisan.gov.in/Documents/RevisedFAQ.pdf
+    # Save by hand (myScheme allows reproduction with credit), then uncomment:
+    # - url: https://www.myscheme.gov.in/schemes/pm-kisan
+    #   file: data/manual/pm-kisan-myscheme.html
+
+- scheme_id: pm-kmy
+  name: Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)
+  terms_note: "Hosted on pmkisan.gov.in: Copyright Policy requires PRIOR PERMISSION to reproduce (see pm-kisan)."
+  docs:
+    - url: https://pmkisan.gov.in/Documents/PM-KMY%20-%20Operational%20Guidelines.pdf
+    - url: https://pmkisan.gov.in/Documents/PM-KMY%20-%20FAQs.pdf
+
+- scheme_id: pmfby
+  name: Pradhan Mantri Fasal Bima Yojana (PMFBY)
+  terms_note: "pmfby.gov.in: no copyright page found by search; check the site footer before publishing."
+  docs:
+    - url: https://pmfby.gov.in/pdf/Revamped%20Operational%20Guidelines_17th%20August%202020.pdf
+
+- scheme_id: kcc
+  name: Kisan Credit Card (KCC)
+  terms_note: "RBI Master Circular on rbi.org.in (RBI is the rule-setter for KCC); check RBI website terms before publishing."
+  docs:
+    - url: https://rbidocs.rbi.org.in/rdocs/content/pdfs/10MCKCC040718_AN.pdf
+
+# ---------------------------------------------------------------- pensions and insurance
+- scheme_id: apy
+  name: Atal Pension Yojana (APY)
+  terms_note: "financialservices.gov.in / jansuraksha.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://financialservices.gov.in/atal-pension-yojana
+    - url: https://jansuraksha.gov.in/Files/APY/ENGLISH/APY.pdf
+
+- scheme_id: pmjjby
+  name: Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)
+  terms_note: "jansuraksha.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://jansuraksha.gov.in/Files/PMJJBY/ENGLISH/Rules.pdf
+    - url: https://jansuraksha.gov.in/Files/PMJJBY/ENGLISH/FAQ.pdf
+
+- scheme_id: pmsby
+  name: Pradhan Mantri Suraksha Bima Yojana (PMSBY)
+  terms_note: "jansuraksha.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://jansuraksha.gov.in/Files/PMSBY/English/Rules.pdf
+    - url: https://jansuraksha.gov.in/Files/PMSBY/ENGLISH/FAQ.pdf
+
+- scheme_id: pm-sym
+  name: Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)
+  terms_note: "india.gov.in / labour.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://www.india.gov.in/spotlight/pradhanmantri-shram-yogi-maan-dhan-pm-sym-pension-scheme-unorganised-workers
+    - url: https://www.labour.gov.in/static/uploads/2025/06/2e7e01b90e6358cb82f396615fc87a94.pdf
+
+- scheme_id: nsap-ignoaps
+  name: Indira Gandhi National Old Age Pension Scheme (NSAP)
+  terms_note: "nsap.nic.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://nsap.nic.in/
+    - url: https://nsap.nic.in/circular.do?method=faq
+
+# ---------------------------------------------------------------- health, women and children
+- scheme_id: pm-jay
+  name: Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB PM-JAY), incl. 70+ senior citizens
+  terms_note: "nha.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://nha.gov.in/PM-JAY
+    - url: https://nha.gov.in/img/resources/English_FAQs_related_to_the_benefits_for_senior_citizens.pdf
+
+- scheme_id: pmmvy
+  name: Pradhan Mantri Matru Vandana Yojana (PMMVY)
+  terms_note: "wcd.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://wcd.gov.in/offerings/pradhan-mantri-matru-vandana-yojana
+    - url: https://www.spniwcd.wcd.gov.in/uploads/pdf/1710109969_IuPuOPPEYF.pdf
+
+- scheme_id: jsy
+  name: Janani Suraksha Yojana (JSY)
+  terms_note: "nhm.gov.in: no copyright page found by search; check footer before publishing. Note: cash amounts on the page may be old."
+  docs:
+    - url: https://nhm.gov.in/index1.php?lang=1&level=3&lid=309&sublinkid=841
+    - url: https://nhm.gov.in/WriteReadData/l892s/97827133331523438951.pdf
+
+- scheme_id: ssy
+  name: Sukanya Samriddhi Yojana (SSY)
+  terms_note: "nsiindia.gov.in: no copyright page found by search; check footer before publishing. Note: interest rate changes quarterly; the rules PDF shows an old rate."
+  docs:
+    - url: https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=171
+    - url: https://www.nsiindia.gov.in/writereaddata/SchemeRules/SukanyaSamriddhiAccountSchemeRule.pdf
+
+- scheme_id: pmuy
+  name: Pradhan Mantri Ujjwala Yojana (PMUY)
+  terms_note: "pmuy.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://www.pmuy.gov.in/about.html
+    - url: https://www.pmuy.gov.in/faq.html
+
+# ---------------------------------------------------------------- housing, energy, food
+- scheme_id: pmay-g
+  name: Pradhan Mantri Awas Yojana - Gramin (PMAY-G)
+  terms_note: "pmayg.dord.gov.in: no copyright page found by search; check footer before publishing. Note: framework PDF is the older edition (scheme extended to 2028-29)."
+  docs:
+    - url: https://pmayg.dord.gov.in/netiayHome/Home.aspx
+    - url: https://pmayg.dord.gov.in/netiayHome/Uploaded/Guidelines-English_Book_Final.pdf
+
+- scheme_id: pmay-u2
+  name: Pradhan Mantri Awas Yojana - Urban 2.0 (PMAY-U 2.0)
+  terms_note: "pmay-urban.gov.in / mohua.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://pmay-urban.gov.in/pmay-u-2.0-guidelines
+    - url: https://www.mohua.gov.in/static/uploads/2026/03/06c33da1341e367b4bd4078426e684cd.pdf
+
+- scheme_id: pm-surya-ghar
+  name: PM Surya Ghar Muft Bijli Yojana
+  terms_note: "pmsuryaghar.gov.in / mnre.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://solarrooftop.pmsuryaghar.gov.in/pdf/faq_national_portal2024021301.pdf
+
+- scheme_id: pmgkay
+  name: Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY) / NFSA
+  terms_note: "dfpd.gov.in / nfsa.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://dfpd.gov.in/pradhan-mantri-garib-kalyan-anna-yojana/en
+    - url: https://nfsa.gov.in/portal/Salient_Features_NFSA_AA
+
+# ---------------------------------------------------------------- jobs, business, banking
+- scheme_id: pm-svanidhi
+  name: PM Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)
+  terms_note: "mohua.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://www.mohua.gov.in/static/uploads/2026/01/bde957bc3a87fb001c05ddd09484edda.pdf
+
+- scheme_id: pm-vishwakarma
+  name: PM Vishwakarma
+  terms_note: "pmvishwakarma.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://pmvishwakarma.gov.in/CDN/MiscFiles/PM_Vishwakarma_Scheme.pdf
+
+- scheme_id: pmmy
+  name: Pradhan Mantri Mudra Yojana (PMMY)
+  terms_note: "financialservices.gov.in and mudra.org.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://www.financialservices.gov.in/pradhan-mantri-mudra-yojana-pmmy
+    - url: https://mudra.org.in/FAQ
+
+- scheme_id: stand-up-india
+  name: Stand-Up India
+  terms_note: "standupmitra.in (SIDBI, for Dept of Financial Services): no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://www.standupmitra.in/Home/SUISchemes
+    - url: https://www.standupmitra.in/Home/FAQs
+
+- scheme_id: pmegp
+  name: Prime Minister's Employment Generation Programme (PMEGP)
+  terms_note: "msme.gov.in / kviconline.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://msme.gov.in/sites/default/files/Revisedguidelines07.12.2023.pdf
+    - url: https://www.kviconline.gov.in/pmegpeportal/jsp/SchemeFaqApplicant.html
+
+- scheme_id: pmkvy
+  name: Pradhan Mantri Kaushal Vikas Yojana 4.0 (PMKVY 4.0)
+  terms_note: "msde.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://msde.gov.in/schemes-initiatives/short-term-training/pmkvy-4.0
+    - url: https://www.msde.gov.in/static/uploads/2024/02/PMKVY-4.0-Guidelines_final-copy.pdf
+
+- scheme_id: pmjdy
+  name: Pradhan Mantri Jan Dhan Yojana (PMJDY)
+  terms_note: "pmjdy.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://pmjdy.gov.in/scheme
+
+# ---------------------------------------------------------------- education
+- scheme_id: pms-sc
+  name: Post Matric Scholarship for Scheduled Caste Students
+  terms_note: "socialjustice.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://socialjustice.gov.in/schemes/25
+    # Save by hand, then uncomment:
+    # - url: https://www.myscheme.gov.in/schemes/pmssc
+    #   file: data/manual/pms-sc-myscheme.html
+
+- scheme_id: pm-yasasvi
+  name: PM YASASVI (scholarships for OBC, EBC and DNT students)
+  terms_note: "socialjustice.gov.in: no copyright page found by search; check footer before publishing."
+  docs:
+    - url: https://socialjustice.gov.in/schemes/101
+    - url: https://socialjustice.gov.in/social-audit/public/schemesdoc/PM_Yasasvi_scheme.pdf
+
+- scheme_id: nmmss
+  name: National Means-cum-Merit Scholarship Scheme (NMMSS)
+  terms_note: "Copyright policy at https://dsel.education.gov.in/en/copyright-policy (read it and quote it here)."
+  docs:
+    - url: https://dsel.education.gov.in/scheme/nmmss
+    - url: https://scholarships.gov.in/public/schemeGuidelines/NMMSS_FAQ.pdf
+
+- scheme_id: pm-vidyalaxmi
+  name: PM Vidyalaxmi (education loans)
+  terms_note: "Copyright policy at https://www.education.gov.in/en/copyright_policy (read it and quote it here)."
+  docs:
+    - url: https://education.gov.in/sites/upload_files/mhrd/files/document-reports/PM_Vidyalaxmi_Scheme_Guidelines.pdf

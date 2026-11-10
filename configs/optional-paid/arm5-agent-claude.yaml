@@ -1,0 +1,8 @@
+# OPTIONAL, PAID: needs `uv sync --extra claude` and ANTHROPIC_API_KEY. Not part of the $0 path.
+# Check the cost before running (more than $5 needs approval).
+run_id: arm5-agent-claude
+arm: agent
+backend: claude
+model: claude-opus-5-5
+effort: low
+k: 5

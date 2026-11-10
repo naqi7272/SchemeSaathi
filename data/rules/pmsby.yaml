@@ -1,0 +1,20 @@
+# DRAFTED BY CLAUDE from the PMSBY rules. Check each rule against its passage, then set
+# verified: true.
+scheme_id: pmsby
+verified: true
+rules:
+  - field: age
+    op: ">="
+    value: 18
+    passage_id: pmsby:d0-page-2:0
+    note: "account holders ... aged between 18 years (completed) and 70 years (age nearer birthday)"
+  - field: age
+    op: "<="
+    value: 70
+    passage_id: pmsby:d0-page-2:0
+    note: "aged between 18 years (completed) and 70 years (age nearer birthday)"
+  - field: has_bank_account
+    op: "=="
+    value: true
+    passage_id: pmsby:d0-page-2:0
+    note: "Individual bank/ Post office account holders of participating banks/ Post office"

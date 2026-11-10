@@ -1,0 +1,37 @@
+# DRAFTED BY CLAUDE from the PM-KMY operational guidelines. Check each rule against its
+# passage, then set verified: true. Not encoded (cannot be expressed with profile fields):
+# exclusion of NPS/ESIC/EPFO members, PM-SYM/PM-LVM members, constitutional post holders,
+# professionals.
+scheme_id: pm-kmy
+verified: true
+rules:
+  - field: occupation
+    op: "=="
+    value: farmer
+    passage_id: pm-kmy:d0-page-3:0
+    note: "All Small and Marginal Farmers (SMFs) ... are eligible"
+  - field: land_hectares
+    op: "<="
+    value: 2.0
+    passage_id: pm-kmy:d0-page-2:2
+    note: "SMF means a farmer who owns cultivable land upto 2 hectare"
+  - field: age
+    op: ">="
+    value: 18
+    passage_id: pm-kmy:d0-page-3:0
+    note: "who are of the age of 18 years and above and upto the age of 40 years"
+  - field: age
+    op: "<="
+    value: 40
+    passage_id: pm-kmy:d0-page-3:0
+    note: "who are of the age of 18 years and above and upto the age of 40 years"
+  - field: is_income_tax_payer
+    op: "=="
+    value: false
+    passage_id: pm-kmy:d0-page-3:2
+    note: "(e) All Persons who paid Income Tax in last assessment year [are excluded]"
+  - field: is_government_employee
+    op: "=="
+    value: false
+    passage_id: pm-kmy:d0-page-3:2
+    note: "serving or retired officers and employees of Central/ State Government ... (Excluding MTS / Class IV / Group D) [are excluded]; simplified to all govt employees"

@@ -1,0 +1,4 @@
+run_id: arm3-sft-q8
+arm: closed_book
+backend: ollama
+model: qwen3-1.7b-saathi:q8_0
